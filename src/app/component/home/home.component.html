@@ -1,0 +1,25 @@
+<ul>
+    <li *ngFor="let country of countrys">
+      <a routerLink="/country/{{country.name}}" >
+        <img [src]="country.flag" [alt]="country.name"/>
+        <div class="content">
+          <div class="name">
+            {{country.name}}
+          </div>
+        </div>
+        <div class="content">
+          <span>Population:</span>
+           {{country.population}}
+         </div>
+         <div class="content">
+          <span>Region :</span>
+           {{country.region}}
+         </div>
+        <div class="content">
+         <span>Capital :</span>
+          {{country.capital}}
+        </div>
+      </a>
+    </li>
+  </ul>
+  
